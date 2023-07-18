@@ -1,0 +1,117 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: #3A68E8;
+    margin: 0px;
+}
+
+* {
+    text-align: center;
+}
+
+.old-dollars-per-hour {
+    position: relative;
+    right: 130px;
+}
+
+#old-dollars {
+    position: relative;
+    bottom: 45px;
+    left: 130px
+}
+
+.old-time-driven {
+    position: relative;
+    bottom: 63px;
+    right: 245px;
+
+}
+
+#old-driven {
+    position: relative;
+    bottom: 45px;
+    left: 245px
+
+}
+
+#new-job {
+    position: relative;
+    bottom: 110px
+}
+
+.new-dollars-per-hour {
+    position: relative;
+    right: 130px;
+
+}
+
+#new-dollars {
+    position: relative;
+    bottom: 45px;
+    left: 130px
+
+}
+
+.new-time-driven {
+    position: relative;
+    bottom: 63px;
+    right: 245px;
+
+}
+
+#new-driven {
+    position: relative;
+    bottom: 45px;
+    left: 245px
+}
+
+#car-info {
+    position: relative;
+    bottom: 210px;
+}
+
+.car-mpg {
+    position: relative;
+    right: 153px;
+
+}
+
+#car-mpg-info {
+    position: relative;
+    bottom: 45px;
+    left: 153px
+
+}
+
+.old-miles-to-work {
+    position: relative;
+    bottom: 63px;
+    right: 205px;
+
+}
+
+#old-time {
+    position: relative;
+    bottom: 45px;
+    left: 205px
+}
+
+.new-miles-to-work {
+    position: relative;
+    bottom: 126px;
+    right: 210px;
+
+}
+
+#new-time {
+    position: relative;
+    bottom: 45px;
+    left: 210px
+}
+
+#the-one-button {
+    position: relative;
+    bottom: 350px;
+}
