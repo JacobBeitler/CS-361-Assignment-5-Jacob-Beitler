@@ -1,9 +1,18 @@
-# CS-361-Assignment-5-Jacob-Beitler
+To request data from the microservice, first, you much run the microservice, then use ZeroMQ to make a request starting with 1, 2, or 3. This will decide which algorithm to use.
+Example code:
+import zmq 
+context = zmp.Context()
 
-How to request data from the microservice, you will input several different numbers.
-Then you will press a button to send the inputted numbers, as a string, to the microservice.
-An example call would be 35,20,40,45,25,15,55
+socket = context.socket(zmq.REQ)
+socket.connect("tcp://localhost:5555")
 
-How you will receive data from the microservice is that the microservice will send back a string of responses that will then be outputted onto a page.  
+socket.send_string("1testpass")
 
-![UML diagram](https://github.com/JacobBeitler/CS-361-Assignment-5-Jacob-Beitler/assets/114364528/925b934f-7f73-46dd-bee7-abb29fa3781b)
+To receive data from the microservice, you would use socket.recv() to receive the request, and then to make it look nice, you would use .decode()
+Example:
+message = socket.recv()
+message = message.decode()
+
+So to sum it all up, we would send a string, for example, "1testpass," and we would receive "uftuqbtt" from the microservice.
+
+![Louis's Microservice UML](https://github.com/JacobBeitler/CS-361-Assignment-5-Jacob-Beitler/assets/114364528/0eac8e4b-c3ce-47ea-a7e2-dfe3e6d4513c)
