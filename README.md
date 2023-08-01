@@ -1,4 +1,4 @@
-To request data from the microservice, first, you much run the microservice, then use ZeroMQ to make a request starting with 1, 2, or 3. This will decide which algorithm to use.
+To request data from the microservice, first, you must run the microservice, then use ZeroMQ to make a request starting with 1, 2, or 3. This will decide which algorithm to use.
 Example code:
 import zmq 
 context = zmp.Context()
